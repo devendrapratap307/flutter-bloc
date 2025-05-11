@@ -18,6 +18,8 @@ class MyStore extends StatelessWidget {
         BlocProvider(create: (context)=> LoginBloc())
       ],
       child: MaterialApp(
+        title: 'Login Bloc',
+        debugShowCheckedModeBanner: false,
         home: LoginPage(),
       ),
     );
