@@ -14,16 +14,18 @@ class LoginLoadingState extends LoginState {
   @override
   List<Object?> get props => [];
 }
+
 class LoginLoadedState extends LoginState {
   LoginRespModel? loginRespModel;
-  LoginLoadedState({this.loginRespModel});
+  LoginLoadedState({required this.loginRespModel});
 
   @override
   List<Object?> get props => [loginRespModel];
 }
+
 class LoginErrorState extends LoginState {
   String? errorMsg;
-  LoginErrorState({this.errorMsg});
+  LoginErrorState({required this.errorMsg});
 
   @override
   List<Object?> get props => [errorMsg];
